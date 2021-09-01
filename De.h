@@ -11,11 +11,13 @@ class De {
     /********************attributs*****************/
 public:
     int valeur;
+    bool etat; //permet de savoir si le dé est piper ou pas
     /******************constructeur****************/
     De();
     /*******************méthodes*******************/
     void lancer();
     static bool gagne(De &de1,De &de2, De &de3);
+    void piper();
 
 };
 
