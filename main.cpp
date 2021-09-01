@@ -1,5 +1,7 @@
 #include <iostream>
 #include "De.h"
+#include "De100.h"
+
 using namespace std;
 int main() {
     srand(time(NULL));
@@ -23,6 +25,12 @@ int main() {
         cout << de3.valeur << endl;
         cout << "test gagne " << De::gagne(de1, de2, de3) << endl;
         /****************1.4*************************/
+
+        /*********************2.1********************/
+        De100 de100=De100();
+        de100.lance();
+        cout<<de100.getValeur();
+        cout<<de100.exact(10);
 
 
     return 0;

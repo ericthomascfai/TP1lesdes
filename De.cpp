@@ -4,6 +4,7 @@
 
 #include <cstdlib>
 #include <ctime>
+#include <chrono>
 #include "De.h"
 
 De::De() {
@@ -13,6 +14,7 @@ etat=false; //le dé n'est pas pipé à sa création
 }
 
 void De::lancer() {
+
     if(!etat)
     this->valeur=rand()%6+1; //affecte à la valeur un entier entre 1 et 6
     else {

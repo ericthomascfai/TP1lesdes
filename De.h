@@ -19,6 +19,7 @@ public:
     static bool gagne(De &de1,De &de2, De &de3);
     void piper();
 
+
 };
 
 
