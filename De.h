@@ -15,6 +15,7 @@ public:
     De();
     /*******************méthodes*******************/
     void lancer();
+    static bool gagne(De &de1,De &de2, De &de3);
 
 };
 

@@ -14,3 +14,7 @@ lancer(); //affecte à la valeur un entier entre 1 et 6
 void De::lancer() {
 this->valeur=rand()%6+1; //affecte à la valeur un entier entre 1 et 6
 }
+
+bool De::gagne(De &de1, De &de2, De &de3) {
+    return false;
+}
