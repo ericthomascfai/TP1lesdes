@@ -14,10 +14,33 @@ int Mystere::saisiejoueur() {
 }
 
 void Mystere::jeu() {
+    for(int i=0;i<nbcoupsmax;i++)
+    {
+        int saisie=saisiejoueur(); //recupere la saisie du joueur
+        if(de100.exact(saisie))
+        {
+            cout<<"Vous avez gagné!!!!!!!!!!"<<endl;
+            break; // je casse la boucle
+        }
+        else
+        if(de100.plusgrand(saisie))
+        {
+            cout<<"trop grand"<<endl;
+        }
+        else
+        if(de100.pluspetit(saisie))
+        {
+            cout<<"trop petit"<<endl;
+        }
+        if(nbcoupsmax-1==i)
+
+            cout<<"Vous avez perdu";
+    }
+
 
 }
 
 Mystere::Mystere() {
-de100=De100(); //instanciation de de100
-nbcoupsmax=10; //assignation du nombre de coups
+    de100=De100(); //instanciation de de100
+    nbcoupsmax=10; //assignation du nombre de coups
 }
